@@ -1,0 +1,56 @@
+body {
+    background-color: blanchedalmond;
+    padding:  30px 100px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    font-size: 60px;
+    color: rgb(122, 54, 54); 
+    text-shadow: 1px, 1px, 4px, black;
+}
+
+table {
+    margin-left: 50px;
+}
+td {
+    padding: 15px;
+    border: 1px solid brown;
+    border-radius: 15px;
+    font-weight: 500;
+    margin: 15px;
+    box-shadow: 1px 1px 5px black;
+    background-color:cornsilk;
+    width: 30px;
+    text-align: center;
+}
+.hidden {
+    display: none;
+}
+
+#main {
+    display: flex;
+    justify-content: center;
+}
+
+#game_board {
+    width: 50%;
+}
+#words_list {
+    width: 50%;
+}
+
+button {
+    width: 150px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px black;
+    text-align: center;
+    color: brown;
+}
+
+button:hover {
+    background-color:bisque;
+    box-shadow: 1px, 5px, 5px black;
+}
+

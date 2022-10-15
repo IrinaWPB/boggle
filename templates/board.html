@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="/static/app.css">
+    <title>Let's Play!</title>
+</head>
+<body>
+    <h1>Boggle</h1>
+    <div class="times_played">
+        <p>Times played: {{times_played}}</p>
+    </div>
+    <div class="score">
+        <p>Score:<span id="score_field">0</span></p>
+    </div>
+    <div class="timer">
+        <p>Time left: <span id="time_field"></span></p>
+    </div>
+    <div id="main">
+        <div id="game_board">
+            <table>
+                {% for row in board %}
+                    <tr>
+                    {% for letter in row %} 
+                        <td>{{letter}}</td>
+                    {% endfor %}   
+                    </tr> 
+                {% endfor %}
+            </table>
+        </div>
+        <div id="words_list">
+            <ul id="words_list"></ul>
+        </div>  
+    </div> 
+        <div id="form_field">
+            <h2>Enter your guess:</h2>
+            <form id="add_word">
+                <input type="text" id="guess" name="word">
+                <button>Add a word</button>
+            </form>
+        </div>
+        <h3 class="message"></h3>     
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="http://unpkg.com/jquery"></script>
+    <script src="/static/script.js"></script>
+</body>
+</html>
