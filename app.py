@@ -34,7 +34,7 @@ def score_count():
     times_played = session.get("times_played", 0)
     session["times_played"] = times_played + 1
 
-    score = request.json["score"]
+    score = int(request.json["score"])
     highest_score = session.get("highest_score", 0)
     if score > highest_score:
         session["highest_score"] = score 
